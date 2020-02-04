@@ -420,7 +420,6 @@
              camera image size) -->
         <plugin name="GstCameraPlugin" filename="libgazebo_gst_camera_plugin.so">
             <robotNamespace></robotNamespace>
-            <udpHost>127.0.0.1</udpHost>
             <udpPort>5600</udpPort>
         </plugin>
         <plugin name="GeotaggedImagesPlugin" filename="libgazebo_geotagged_images_plugin.so">
@@ -428,7 +427,6 @@
             <interval>1</interval>
             <width>3840</width>
             <height>2160</height>
-            <maximum_zoom>8.0</maximum_zoom>
         </plugin>
       </sensor>
     </link>
@@ -1143,10 +1141,9 @@
 
     <include>
       <uri>model://sonar</uri>
-      <pose>-0.1 0 0 0 0 0</pose>
     </include>
     <joint name="sonar_joint" type="revolute">
-      <child>sonar::link</child>
+      <child>sonar_model::link</child>
       <parent>typhoon_h480::base_link</parent>
       <axis>
         <xyz>0 0 1</xyz>
@@ -1578,9 +1575,9 @@
       <control_gimbal_channels>
         <channel>
           <joint_control_pid>
-            <p>0.8</p>
+            <p>1.0</p>
             <i>0.1</i>
-            <d>0.02</d>
+            <d>0.0005</d>
             <iMax>0</iMax>
             <iMin>0</iMin>
             <cmdMax>1.0</cmdMax>

@@ -20,12 +20,11 @@
     <include>
       <uri>model://sf10a</uri>
       <pose>0 0 -0.1 0 0 0</pose>
-      <name>lidar</name>
     </include>
 
-    <joint name="lidar_joint" type="fixed">
+    <joint name="sf10a_joint" type="fixed">
       <parent>iris::base_link</parent>
-      <child>lidar::link</child>
+      <child>sf10a::link</child>
     </joint>
 
   </model>
