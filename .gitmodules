@@ -1,4 +1,0 @@
-[submodule "external/OpticalFlow"]
-	path = external/OpticalFlow
-	url = git@github.com:sritank/OpticalFlow.git
-	branch = master
