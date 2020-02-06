@@ -443,7 +443,7 @@
       <mavlink_addr>INADDR_ANY</mavlink_addr>
       <mavlink_udp_port>14560</mavlink_udp_port>
       <mavlink_tcp_port>4560</mavlink_tcp_port>
-      <serialEnabled>1</serialEnabled> <!--changed HITL-->
+      <serialEnabled>1</serialEnabled><!--changed HITL-->
       <serialDevice>/dev/ttyACM0</serialDevice>
       <baudRate>921600</baudRate>
       <qgc_addr>INADDR_ANY</qgc_addr>
